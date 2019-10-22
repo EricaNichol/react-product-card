@@ -1,0 +1,138 @@
+.quantity_container {
+  max-width: 150px;
+  border: grey 1px solid;
+  border-radius: 3px;
+  margin: 10px 0;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  a, a:visited {
+    color: red !important;
+  }
+
+  .quantity_text {
+    padding: 0 10px;
+  }
+}
+
+.quantity_button {
+  margin-bottom: 10px
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  // Override Materialize css
+  border: none;
+  box-shadow: none;
+  padding: 60px 0 60px;
+
+  .card-content p {
+    margin-bottom: 10px;
+
+    &.small {
+      font-size: 10px;
+    }
+  }
+}
+
+// cart view
+.cart_view {
+  position: relative;
+
+  .cart_number {
+    display: block;
+    position: absolute;
+    color: white;
+    padding-top: 4px;
+    background-color: red;
+    border-radius: 50px;
+    font-size: 10px;
+    line-height: normal;
+    font-weight: bold;
+    text-align: center;
+    top: 8px;
+    right: -7px;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+// ProductGallery
+.product_gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .product_gallery_list {
+    width: 15%;
+
+    .product_image {
+      padding: 10px;
+    }
+  }
+
+  .product_main {
+    width: 80%;
+  }
+}
+
+.card-content {
+  text-align: left;
+}
+
+// OwlCarousel
+.owl-carousel {
+  padding: 60px 0 60px;
+}
+.owl-nav {
+  display: block !important;
+
+  button.owl-next,
+  button.owl-prev {
+    position: absolute !important;
+    top: 40%;
+    background: black !important;
+    height: 30px;
+    width: 30px;
+    border-radius: 50px !important;
+    opacity: 0.5;
+    color: white !important;
+  }
+
+  .owl-next {
+    right: 0;
+  }
+  .owl-prev {
+    left: 0;
+  }
+}
+
+.owl-stage-outer {
+  padding: 10px;
+}
+
+.owl-item {
+  .item {
+    border: 1px solid grey;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 5px 5px 5px grey;
+
+    .water-mark {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 30px;
+      width: 30px;
+      margin: 5px;
+    }
+  }
+
+  img {
+    width: 250px;
+    height: 250px;
+  }
+}
